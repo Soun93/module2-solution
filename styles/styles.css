@@ -14,9 +14,6 @@
   box-sizing: border-box;
 }
 
-.container {
-  margin: 4% 1% 0 1%;
-}
 .container > * {
   display: flex;
 }
@@ -41,8 +38,6 @@
   background-color: #999999;
   margin: 10px;
   border: 2px solid black;
-  box-sizing: border-box;
-
 }
 
 .card_title {
@@ -77,10 +72,14 @@
     flex-wrap: wrap;
   }
 
+  .card {
+    width: 47%;
+  }
+
   /* I think using an id instead of using nth-child because it could be something more static - I would love to see your comments about it!  */
 
   .card_container .card:nth-child(3) {
-    width: 100%;
+    width: 97%;
   }
   .card_container .card:nth-child(3) .card_body p::after {
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo hendrerit enim in varius. Maecenas interdum tincidunt risus, sit amet lobortis tortor sagittis eu. ';
@@ -88,6 +87,7 @@
 }
 
 @media (max-width: 767px) {
+  
   .card{ 
     width: 100%;
   }
